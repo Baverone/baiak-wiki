@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Builds · Wiki do BaiakIdle</title>
+<link rel="stylesheet" href="estilo.css">
+<script src="pesquisa.js" defer></script>
+</head>
+<body>
+<header class="topo">
+<a class="marca-site" href="index.html">Wiki do BaiakIdle</a>
+<div class="pesquisa">
+<input type="search" id="pesquisa-caixa" placeholder="Pesquisar na wiki" autocomplete="off" aria-label="Pesquisar na wiki">
+<ul id="pesquisa-resultados" class="resultados" hidden></ul>
+</div>
+</header>
+<div class="pagina">
+<nav class="menu" aria-label="Secções">
+<details class="menu-caixa">
+<summary>Menu</summary>
+<ul class="menu-topo"><li><a href="index.html">Início</a></li></ul>
+<p class="menu-seccao">Hunts</p>
+<ul><li><a href="hunt-bony-sea-devil.html">Bony Sea Devil</a></li><li><a href="hunt-bulltaur.html">Bulltaur</a></li><li><a href="hunt-cloak-of-terror.html">Cloak Of Terror</a></li><li><a href="hunt-crystal-enigma.html">Crystal Enigma</a></li><li><a href="hunt-dark-thais.html">Dark Thais</a></li><li><a href="hunt-grimeleech.html">Grimeleech</a></li><li><a href="hunts.html">Hunts</a></li><li><a href="hunt-infernal-demon.html">Infernal Demon</a></li><li><a href="hunt-lavafungos.html">Lavafungos</a></li><li><a href="hunt-livraria-fire.html">Livraria FIRE</a></li><li><a href="hunt-monster-graveyard.html">Monster Graveyard</a></li><li><a href="hunt-rotten-golem.html">Rotten Golem</a></li><li><a href="hunt-sparkling-pools.html">Sparkling Pools</a></li></ul>
+<p class="menu-seccao">Criaturas e bestiário</p>
+<ul><li><a href="bestiario.html">Criaturas e bestiário</a></li></ul>
+<p class="menu-seccao">Charms</p>
+<ul><li><a href="charms.html">Charms</a></li></ul>
+<p class="menu-seccao">Codex</p>
+<ul><li><a href="codex.html">Codex</a></li><li><a href="codex-nightmare-hell.html">Codex, Nightmare e Hell</a></li></ul>
+<p class="menu-seccao">Forja</p>
+<ul><li><a href="forja.html">Forja</a></li></ul>
+<p class="menu-seccao">Bosses e Auto Boss</p>
+<ul><li><a href="auto-boss.html">Auto Boss</a></li><li><a href="bosses.html">Bosses</a></li></ul>
+<p class="menu-seccao">Itens e famílias</p>
+<ul><li><a href="itens.html">Itens e famílias</a></li><li><a href="moonsilver.html">Moonsilver</a></li><li><a href="primal.html">Primal</a></li><li><a href="sanguine.html">Sanguine</a></li><li><a href="soul-war.html">Soul War</a></li></ul>
+<p class="menu-seccao">Imbuements</p>
+<ul><li><a href="imbuements.html">Imbuements</a></li></ul>
+<p class="menu-seccao">Builds e vocações</p>
+<ul><li><a href="builds.html" aria-current="page">Builds</a></li><li><a href="vocacoes.html">Vocações</a></li></ul>
+<p class="menu-seccao">Market</p>
+<ul><li><a href="market.html">Market</a></li></ul>
+<p class="menu-seccao">Casa e treino</p>
+<ul><li><a href="casa.html">Casa e treino</a></li></ul>
+<p class="menu-seccao">Glossário</p>
+<ul><li><a href="glossario.html">Glossário</a></li></ul>
+</details>
+</nav>
+<main class="conteudo">
+<article>
+<h1>Builds</h1>
+<p>A <strong>árvore de build</strong> é o sistema em que cada personagem gasta pontos de nível em nós que dão ataque, vida, crítico, proteções e habilidades especiais. Cada vocação tem a sua árvore. Esta página explica as regras, o custo, o código <strong>BT1</strong> que se exporta e se importa, e os nós de táticas. Os nós de cada vocação e as magias estão em <a href="vocacoes.html">Vocações</a>. Os termos estão no <a href="glossario.html">Glossário</a>.</p>
+<h2 id="as-regras-da-arvore">As regras da árvore</h2>
+<ul><li>Cada nível dá <strong>1 ponto</strong>, e conta retroativamente; os pontos gastos não podem passar o nível do personagem <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>.</li><li>Há dois tipos de nó:
+- <strong>small</strong>: até 10 ranks; o rank N custa «custo base × N», por isso fechar um small custa 55 vezes o custo base. O custo base é 1 nos tiers 0 a 3, 2 nos tiers 4 a 7 e 3 nos tiers 8 a 10 <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>;
+- <strong>notable</strong>: 1 rank, com custo fixo, de 50 a 300 pontos <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>.</li><li>A árvore tem 12 linhas, de tier 0 a 11, e 7 colunas <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>. O tier 11 é sempre o nó <strong>Avatar</strong>.</li><li><strong>Ligações:</strong> um nó de tier 0 com pelo menos 1 rank é uma raiz. Um nó só está ativo se estiver ligado a uma raiz por nós com pelo menos 1 rank; cada ligação vale nos dois sentidos, por isso se pode subir uma linha para um lado ou para o outro <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>.</li><li>Cada personagem tem a sua árvore. A janela <strong>Build</strong> só mostra os personagens que estão na party <span class="marca marca-medido" title="medido no jogo">medido 24/10</span>.</li></ul>
+<table><thead><tr><th>Vocação</th><th>Letra do código</th><th>Nós (small e notable)</th><th>Custo para fechar tudo</th></tr></thead><tbody><tr><td>Knight</td><td>K</td><td>43 (33 e 10)</td><td>4.745</td></tr><tr><td>Paladin</td><td>P</td><td>41 (31 e 10)</td><td>4.525</td></tr><tr><td>Monk</td><td>M</td><td>40 (31 e 9)</td><td>4.425</td></tr><tr><td>Druid</td><td>D</td><td>39 (30 e 9)</td><td>4.370</td></tr><tr><td>Sorcerer</td><td>S</td><td>40 (31 e 9)</td><td>4.315</td></tr></tbody></table>
+<p>Os números da tabela são do cliente de 27/10, igual ao de 20/10 <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>.</p>
+<h2 id="os-nos-avatar">Os nós Avatar</h2>
+<p>O nó do tier 11 de cada vocação (Avatar of Steel, of Light, of Balance, of Nature e of Storm) custa 300 pontos e dá bónus fixos de ataque, vida ou dano de magia mais 1 % de absorção em cada elemento. Além disso, cada golpe ou magia que <strong>acerta</strong> tem <strong>5 %</strong> de chance de entrar na forma avatar durante <strong>15 segundos</strong>: nessa forma o personagem crita sempre e recebe menos 3 % de dano <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>.</p>
+<h2 id="o-codigo-bt1">O código BT1</h2>
+<p>O botão <strong>Exportar</strong> da janela Build copia um código que descreve a árvore inteira, e o <strong>Importar</strong> («Colar código para importar») aplica um código. A forma é:</p>
+<pre><code>BT1-&lt;letra&gt;&lt;nível&gt;-&lt;ranks&gt;</code></pre>
+<ul><li>A <strong>letra</strong> é a da vocação: K, P, S, D ou M <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>.</li><li>O <strong>nível</strong> é o do personagem quando se exportou, ou «F» se não houve <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>.</li><li>Os <strong>ranks</strong> são um dígito hexadecimal por nó, de 0 a A, na ordem dos <code>id</code> dos nós da vocação (por ordem alfabética), sem os zeros do fim <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>. Dígitos a mais ignoram-se e a menos valem 0; um dígito acima do rank máximo fica no máximo <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>.</li><li>Ao importar, o jogo confere pela ordem: que o código é válido, que a vocação é a do personagem, deita fora os nós que não ligam ao tier 0, vê se os pontos gastos não passam o nível, se não é já a build do personagem e se o gold chega; só então pede a confirmação («Importar esta build vai SUBSTITUIR a sua atual…») <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>.</li></ul>
+<p>Depois de importar, convém fechar e reabrir a janela Build e usar o Exportar para confirmar: a vista fica desatualizada logo a seguir <span class="marca marca-medido" title="medido no jogo">medido 30/10</span>.</p>
+<h2 id="custo-de-mudar-a-arvore">Custo de mudar a árvore</h2>
+<table><thead><tr><th>Operação</th><th>Custo em gold</th></tr></thead><tbody><tr><td>Reset completo</td><td>1.000 mais 200 por ponto gasto <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td></tr><tr><td>Importar um código</td><td>o mesmo que o reset completo, calculado sobre os pontos gastos <strong>agora</strong> <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td></tr><tr><td>Devolver um rank, de cada vez</td><td>400 por ponto do rank <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td></tr><tr><td>Subir ranks com pontos livres, clicando nos nós</td><td>grátis <span class="marca marca-medido" title="medido no jogo">medido 24/10</span></td></tr></tbody></table>
+<ul><li>Exemplos pela fórmula: 500 pontos gastos custam 101.000 de gold e 700 custam 141.000 <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>.</li><li>Para pontos livres, clica-se no nó (um clique é +1 rank, Ctrl+clique +5 e Shift+clique até ao máximo) e confirma-se no botão «Confirmar (N)» que aparece no topo da janela <span class="marca marca-medido" title="medido no jogo">medido 24/10</span>. O Importar cobra o reset inteiro, por isso é para refazer a árvore e não para meia dúzia de pontos.</li></ul>
+<h2 id="battle-tactics">Battle Tactics</h2>
+<p>O nó <strong>Battle Tactics</strong> existe nas cinco árvores, no tier 5 (ou 6 no Sorcerer) <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>. É um small de até 10 ranks, com 2 pontos de custo base, e o texto do nó diz que cada rank vale <strong>+100 níveis</strong> de tática para a IA de combate <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>.</p>
+<ul><li>O comportamento perfeito da IA (mira, posicionamento e fuga) existe desde o nível 1, e a percentagem é a chance de acertar a decisão perfeita em cada momento. A chance é de 50 % mais 2,5 % por «ponto de tática», até 100 % <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>.</li><li>Os pontos de tática vêm de duas metades: o nível (cada 100 níveis dão 0,5 pontos, até 10, aos 2.000) e os ranks do nó (1 ponto por rank, até 10) <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>. Por exemplo, o nível 800 dá 4 pontos, e a chance é de 60 % sem ranks do nó. Isto vem do código do cliente de 09/09; o texto do nó (+100 níveis por rank) daria só 0,5 pontos por rank, e qual vale: <span class="marca marca-confirmar" title="ainda por confirmar">por confirmar</span>.</li><li>O rank 3 destrava o <strong>kite infinito</strong> sem tank, em que os personagens à distância fogem dos monstros sem precisar de um Knight. O raio de procura de posição cresce com os pontos de tática <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>. O foco travado e o resgate (largar o grupo para salvar um aliado) precisam do rank 8 <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>.</li><li>Custo acumulado em pontos de build: o rank 3 custa 12, o rank 8 custa 72 e o rank 10 custa 110 <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>.</li><li>O ecrã de Táticas permite escrever condições (vida, mana, monstros vivos, aliado em baixo) e posições por vocação; o que cada decisão rende em dano e em segurança não se conhece: <code>?</code>.</li></ul>
+<h2 id="outras-mecanicas-da-arvore">Outras mecânicas da árvore</h2>
+<ul><li>A base do jogador é <strong>5 %</strong> de chance de crítico e <strong>+10 %</strong> de dano crítico <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>. Um crítico faria +50 % de dano, mais o dano crítico da build <span class="marca marca-comunidade" title="vem da comunidade">comunidade</span>.</li><li>O jogo não traz no cliente a fórmula do dano elemental em percentagem: só soma o valor e mostra-o. A conta é do servidor <code>?</code>.</li><li>Cada rank de um nó small dá um valor fixo («por rank»): por exemplo, Fury dá +1,5 % de ataque por rank, Frostbite +2 % de dano crítico por rank e Fire Ward +0,5 % de absorção de fogo por rank <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>.</li><li>A janela Build tem um painel «Bónus (o total do combate)» que soma itens, árvore, proficiência, Rift, guild, Codex e boosts.</li></ul>
+</article>
+<footer class="rodape">
+<p>revista a 01/11/2026</p>
+</footer>
+</main>
+</div>
+</body>
+</html>

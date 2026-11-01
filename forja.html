@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Forja · Wiki do BaiakIdle</title>
+<link rel="stylesheet" href="estilo.css">
+<script src="pesquisa.js" defer></script>
+</head>
+<body>
+<header class="topo">
+<a class="marca-site" href="index.html">Wiki do BaiakIdle</a>
+<div class="pesquisa">
+<input type="search" id="pesquisa-caixa" placeholder="Pesquisar na wiki" autocomplete="off" aria-label="Pesquisar na wiki">
+<ul id="pesquisa-resultados" class="resultados" hidden></ul>
+</div>
+</header>
+<div class="pagina">
+<nav class="menu" aria-label="Secções">
+<details class="menu-caixa">
+<summary>Menu</summary>
+<ul class="menu-topo"><li><a href="index.html">Início</a></li></ul>
+<p class="menu-seccao">Hunts</p>
+<ul><li><a href="hunt-bony-sea-devil.html">Bony Sea Devil</a></li><li><a href="hunt-bulltaur.html">Bulltaur</a></li><li><a href="hunt-cloak-of-terror.html">Cloak Of Terror</a></li><li><a href="hunt-crystal-enigma.html">Crystal Enigma</a></li><li><a href="hunt-dark-thais.html">Dark Thais</a></li><li><a href="hunt-grimeleech.html">Grimeleech</a></li><li><a href="hunts.html">Hunts</a></li><li><a href="hunt-infernal-demon.html">Infernal Demon</a></li><li><a href="hunt-lavafungos.html">Lavafungos</a></li><li><a href="hunt-livraria-fire.html">Livraria FIRE</a></li><li><a href="hunt-monster-graveyard.html">Monster Graveyard</a></li><li><a href="hunt-rotten-golem.html">Rotten Golem</a></li><li><a href="hunt-sparkling-pools.html">Sparkling Pools</a></li></ul>
+<p class="menu-seccao">Criaturas e bestiário</p>
+<ul><li><a href="bestiario.html">Criaturas e bestiário</a></li></ul>
+<p class="menu-seccao">Charms</p>
+<ul><li><a href="charms.html">Charms</a></li></ul>
+<p class="menu-seccao">Codex</p>
+<ul><li><a href="codex.html">Codex</a></li><li><a href="codex-nightmare-hell.html">Codex, Nightmare e Hell</a></li></ul>
+<p class="menu-seccao">Forja</p>
+<ul><li><a href="forja.html" aria-current="page">Forja</a></li></ul>
+<p class="menu-seccao">Bosses e Auto Boss</p>
+<ul><li><a href="auto-boss.html">Auto Boss</a></li><li><a href="bosses.html">Bosses</a></li></ul>
+<p class="menu-seccao">Itens e famílias</p>
+<ul><li><a href="itens.html">Itens e famílias</a></li><li><a href="moonsilver.html">Moonsilver</a></li><li><a href="primal.html">Primal</a></li><li><a href="sanguine.html">Sanguine</a></li><li><a href="soul-war.html">Soul War</a></li></ul>
+<p class="menu-seccao">Imbuements</p>
+<ul><li><a href="imbuements.html">Imbuements</a></li></ul>
+<p class="menu-seccao">Builds e vocações</p>
+<ul><li><a href="builds.html">Builds</a></li><li><a href="vocacoes.html">Vocações</a></li></ul>
+<p class="menu-seccao">Market</p>
+<ul><li><a href="market.html">Market</a></li></ul>
+<p class="menu-seccao">Casa e treino</p>
+<ul><li><a href="casa.html">Casa e treino</a></li></ul>
+<p class="menu-seccao">Glossário</p>
+<ul><li><a href="glossario.html">Glossário</a></li></ul>
+</details>
+</nav>
+<main class="conteudo">
+<article>
+<h1>Forja</h1>
+<p>A Forja sobe o <strong>tier</strong> de um equipamento, de T0 até um máximo que depende da classe do item. Cada tier dá um bónus próprio do tipo de peça. Esta página tem as três operações, os custos, as regras de quem pode ser sacrificado e a conta das peças. Os termos (convergência, fusão, pó, núcleo, classe) estão no <a href="glossario.html">Glossário</a>.</p>
+<p>Fica em Progressão, Forja, separador Tier, com as operações Fusão, Transferência e Conversão. Para a Conversão não há regras recolhidas: <code>?</code>.</p>
+<h2 id="o-que-o-tier-da-e-ate-onde-sobe">O que o tier dá e até onde sobe</h2>
+<ul><li>Só os itens de <strong>classe 4</strong> sobem até <strong>T10</strong>. Nos itens de classe 1 a 3 o tier máximo é igual à classe <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>.</li><li>O bónus de tier depende do slot: arma dá <strong>Onslaught</strong>, capacete <strong>Momentum</strong>, armadura <strong>Ruse</strong>, pernas <strong>Transcendence</strong> e botas <strong>Amplification</strong> <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>. Quanto vale cada tier de cada bónus: <code>?</code>.</li></ul>
+<h2 id="as-tres-operacoes">As três operações</h2>
+<table><thead><tr><th>Operação</th><th>O que faz</th><th>Sucesso</th><th>Pó</th></tr></thead><tbody><tr><td><strong>Fusão</strong> (normal)</td><td>junta a peça com uma peça sacrificada do mesmo item, no mesmo tier, e sobe um tier</td><td>50 % (65 % com 1 núcleo) <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>100 <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td></tr><tr><td><strong>Convergência</strong></td><td>o mesmo, mas <strong>garantido</strong>, sem núcleos e muito mais caro em gold</td><td>100 % <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>130 <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td></tr><tr><td><strong>Transferência</strong></td><td>passa o tier de uma peça para outra</td><td>a normal chega com um tier a menos, a de convergência passa o tier inteiro <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>100 (normal) ou 160 (convergência) <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td></tr></tbody></table>
+<ul><li>Na fusão normal, se falhar, a peça sacrificada perde o tier: 100 % sem núcleo e 50 % com 1 núcleo. O cliente não deixa claro se o 50 % é a chance de perder ou a parte do tier perdida <span class="marca marca-confirmar" title="ainda por confirmar">por confirmar</span>. Numa convergência a peça sacrificada desaparece sempre <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>.</li><li>O gold depende do <strong>tier de destino</strong>: sobe para T2 e paga-se o preço de T2 <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>.</li></ul>
+<h3 id="o-que-pode-ser-sacrificado-numa-convergencia">O que pode ser sacrificado numa convergência</h3>
+<p>Confirmado no código do cliente a 21/10/2026:</p>
+<ul><li>A peça sacrificada tem de ser de <strong>classe 4, do mesmo slot e do mesmo tier</strong> que a que sobe. Não precisa de ser o mesmo item nem da mesma vocação. As armas de uma e de duas mãos contam como o mesmo slot <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>.</li><li><strong>Nenhuma das duas peças pode ter imbuements.</strong> Limpam-se antes, de graça, e o imbuement pago perde-se <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>.</li><li>As peças têm de estar na mochila ou na caixa de entrada <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>.</li></ul>
+<h2 id="quanto-custa-itens-de-classe-4">Quanto custa (itens de classe 4)</h2>
+<p>Gold por operação, para chegar a cada tier. Os núcleos só entram na fusão normal. M é milhão e B é mil milhões.</p>
+<table><thead><tr><th>Para o tier</th><th>Fusão normal: gold e núcleos</th><th>Convergência: gold</th><th>Transferência por convergência: gold</th></tr></thead><tbody><tr><td>T1</td><td>8M e 1 <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>55M <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>65M <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td></tr><tr><td>T2</td><td>20M e 2 <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>110M <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>165M <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td></tr><tr><td>T3</td><td>40M e 5 <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>170M <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>375M <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td></tr><tr><td>T4</td><td>65M e 10 <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>300M <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>800M <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td></tr><tr><td>T5</td><td>100M e 15 <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>875M <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>2B <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td></tr><tr><td>T6</td><td>250M e 25 <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>2,35B <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>5,25B <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td></tr><tr><td>T7</td><td>750M e 35 <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>6,95B <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>14,5B <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td></tr><tr><td>T8</td><td>2,5B e 50 <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>21,25B <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>42,5B <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td></tr><tr><td>T9</td><td>8B e 60 <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>50B <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>100B <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td></tr><tr><td>T10</td><td>15B e 85 <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>125B <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>300B <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td></tr></tbody></table>
+<h2 id="po-slivers-e-nucleos">Pó, slivers e núcleos</h2>
+<ul><li>O <strong>pó</strong> cai a caçar. Há um limite do que se pode guardar: era de <strong>4.500</strong> a 20/10/2026 <span class="marca marca-medido" title="medido no jogo">medido 20/10</span>. O que o faz subir: <code>?</code>.</li><li><strong>60 de pó</strong> dão 3 slivers e <strong>50 slivers</strong> dão 1 núcleo <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span>.</li></ul>
+<h2 id="a-conta-das-pecas">A conta das peças</h2>
+<p>Como a peça sacrificada tem de estar no mesmo tier, cada subida pela convergência gasta uma peça que já esteve nesse tier. Um item que parte de T0 e chega a T4 só por convergência consome <strong>15 peças</strong> de classe 4 além dele próprio, e todas essas fusões saem do bolso:</p>
+<table><thead><tr><th>Chegar a</th><th>Peças T0 no total</th><th>Fusões</th><th>Gold</th><th>Pó</th></tr></thead><tbody><tr><td>T1</td><td>2</td><td>1</td><td>55M <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>130 <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td></tr><tr><td>T2</td><td>4</td><td>3</td><td>220M <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>390 <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td></tr><tr><td>T3</td><td>8</td><td>7</td><td>610M <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>910 <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td></tr><tr><td>T4</td><td>16</td><td>15</td><td>1.520M <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td><td>1.950 <span class="marca marca-cliente" title="lido no cliente do jogo">cliente</span></td></tr></tbody></table>
+<p>As contas são feitas com a tabela de convergência de cima: T4 são 8 fusões a T1, 4 a T2, 2 a T3 e 1 a T4. O que trava, por esta ordem, são as peças, o pó e o gold.</p>
+</article>
+<footer class="rodape">
+<p>revista a 01/11/2026</p>
+</footer>
+</main>
+</div>
+</body>
+</html>

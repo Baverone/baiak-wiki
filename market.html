@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Market · Wiki do BaiakIdle</title>
+<link rel="stylesheet" href="estilo.css">
+<script src="pesquisa.js" defer></script>
+</head>
+<body>
+<header class="topo">
+<a class="marca-site" href="index.html">Wiki do BaiakIdle</a>
+<div class="pesquisa">
+<input type="search" id="pesquisa-caixa" placeholder="Pesquisar na wiki" autocomplete="off" aria-label="Pesquisar na wiki">
+<ul id="pesquisa-resultados" class="resultados" hidden></ul>
+</div>
+</header>
+<div class="pagina">
+<nav class="menu" aria-label="Secções">
+<details class="menu-caixa">
+<summary>Menu</summary>
+<ul class="menu-topo"><li><a href="index.html">Início</a></li></ul>
+<p class="menu-seccao">Hunts</p>
+<ul><li><a href="hunt-bony-sea-devil.html">Bony Sea Devil</a></li><li><a href="hunt-bulltaur.html">Bulltaur</a></li><li><a href="hunt-cloak-of-terror.html">Cloak Of Terror</a></li><li><a href="hunt-crystal-enigma.html">Crystal Enigma</a></li><li><a href="hunt-dark-thais.html">Dark Thais</a></li><li><a href="hunt-grimeleech.html">Grimeleech</a></li><li><a href="hunts.html">Hunts</a></li><li><a href="hunt-infernal-demon.html">Infernal Demon</a></li><li><a href="hunt-lavafungos.html">Lavafungos</a></li><li><a href="hunt-livraria-fire.html">Livraria FIRE</a></li><li><a href="hunt-monster-graveyard.html">Monster Graveyard</a></li><li><a href="hunt-rotten-golem.html">Rotten Golem</a></li><li><a href="hunt-sparkling-pools.html">Sparkling Pools</a></li></ul>
+<p class="menu-seccao">Criaturas e bestiário</p>
+<ul><li><a href="bestiario.html">Criaturas e bestiário</a></li></ul>
+<p class="menu-seccao">Charms</p>
+<ul><li><a href="charms.html">Charms</a></li></ul>
+<p class="menu-seccao">Codex</p>
+<ul><li><a href="codex.html">Codex</a></li><li><a href="codex-nightmare-hell.html">Codex, Nightmare e Hell</a></li></ul>
+<p class="menu-seccao">Forja</p>
+<ul><li><a href="forja.html">Forja</a></li></ul>
+<p class="menu-seccao">Bosses e Auto Boss</p>
+<ul><li><a href="auto-boss.html">Auto Boss</a></li><li><a href="bosses.html">Bosses</a></li></ul>
+<p class="menu-seccao">Itens e famílias</p>
+<ul><li><a href="itens.html">Itens e famílias</a></li><li><a href="moonsilver.html">Moonsilver</a></li><li><a href="primal.html">Primal</a></li><li><a href="sanguine.html">Sanguine</a></li><li><a href="soul-war.html">Soul War</a></li></ul>
+<p class="menu-seccao">Imbuements</p>
+<ul><li><a href="imbuements.html">Imbuements</a></li></ul>
+<p class="menu-seccao">Builds e vocações</p>
+<ul><li><a href="builds.html">Builds</a></li><li><a href="vocacoes.html">Vocações</a></li></ul>
+<p class="menu-seccao">Market</p>
+<ul><li><a href="market.html" aria-current="page">Market</a></li></ul>
+<p class="menu-seccao">Casa e treino</p>
+<ul><li><a href="casa.html">Casa e treino</a></li></ul>
+<p class="menu-seccao">Glossário</p>
+<ul><li><a href="glossario.html">Glossário</a></li></ul>
+</details>
+</nav>
+<main class="conteudo">
+<article>
+<h1>Market</h1>
+<p>O <strong>Market</strong> é onde os jogadores anunciam equipamento e o compram com <strong>coins</strong>. Os anúncios funcionam como leilões: cada um tem um tempo, um preço atual e lances. Esta página explica as regras do jogo como se observaram, e o que ainda não se sabe. O que cada item vale e de onde vem está em <a href="itens.html">Itens e famílias</a>; o enquadramento da forja em <a href="forja.html">Forja</a>; os termos no <a href="glossario.html">Glossário</a>.</p>
+<h2 id="o-que-mostra-um-anuncio">O que mostra um anúncio</h2>
+<p>Cada anúncio tem um número (um número de identificação) e mostra <span class="marca marca-medido" title="medido no jogo">medido 20/10</span>:</p>
+<ul><li>o item, com a <strong>raridade</strong>, o nível de melhoria (+N), o <strong>tier</strong> e o bónus de tier se foi forjado;</li><li>os atributos aleatórios da raridade;</li><li>o preço atual, o número de lances e o tempo que falta para acabar (de minutos a mais de dois dias);</li><li>o nível mínimo do item.</li></ul>
+<p>Os termos de item (raridade, +N, tier) estão em <a href="itens.html">Itens e famílias</a>.</p>
+<h2 id="lances">Lances</h2>
+<ul><li>O lance é um <strong>teto</strong> automático: o jogador diz o máximo que aceita pagar e o jogo só gasta o que for preciso para ficar à frente. Se for ultrapassado, o valor devolve-se <span class="marca marca-medido" title="medido no jogo">medido 20/10</span>.</li><li>O jogo confirma com «Lance registrado — você está liderando». Se o lance for alto, o jogo pede uma confirmação extra <span class="marca marca-medido" title="medido no jogo">medido 20/10</span>.</li><li>Um lance <strong>não se pode baixar nem cancelar</strong>: o jogo só deixa «Aumentar limite» <span class="marca marca-medido" title="medido no jogo">medido 22/10</span>.</li><li><strong>Anti-snipe:</strong> na reta final de um anúncio, cada lance tem de subir pelo menos 10 % e adia o fim <span class="marca marca-medido" title="medido no jogo">medido 20/10</span>.</li><li>No pagamento há duas moedas, «Coins» e «Transferable». O que as distingue ao certo: <code>?</code> <span class="marca marca-medido" title="medido no jogo">medido 20/10</span>.</li><li>Quem ganha recebe o item na <strong>Caixa de entrada</strong> do Armazém <span class="marca marca-medido" title="medido no jogo">medido 20/10</span>.</li></ul>
+<h2 id="os-separadores-e-as-ferramentas">Os separadores e as ferramentas</h2>
+<table><thead><tr><th>Parte</th><th>O que faz</th></tr></thead><tbody><tr><td>Procura</td><td>por nome ou por número do anúncio, com filtro por raridade <span class="marca marca-medido" title="medido no jogo">medido 20/10</span></td></tr><tr><td>Meus lances</td><td>os anúncios em que se licitou: a liderar, ganhos e perdidos <span class="marca marca-medido" title="medido no jogo">medido 20/10</span></td></tr><tr><td>Desejos</td><td>alertas de itens: guarda-se um item, uma raridade mínima e um preço máximo, e o jogo avisa quando aparece um anúncio que cabe; o limite é de 20 desejos <span class="marca marca-medido" title="medido no jogo">medido 22/10</span></td></tr><tr><td>Histórico</td><td>as vendas dos últimos 7 dias, que servem de referência de preço <span class="marca marca-medido" title="medido no jogo">medido 20/10</span></td></tr><tr><td>Supply</td><td>consumíveis, como o might ring e o stone skin amulet, a 100.000 de gold cada <span class="marca marca-medido" title="medido no jogo">medido 20/10</span></td></tr></tbody></table>
+<ul><li>Os consumíveis estão também em muitos monstros <span class="marca marca-medido" title="medido no jogo">medido 20/10</span>.</li><li>A <strong>Loja</strong> do jogo (a das coins) vende anéis e amuletos de terra, sagrado e morte a 100 coins, o moonlight nectar a 500, os red e blue dagger nectar a 250 e a amon backpack a 600 <span class="marca marca-medido" title="medido no jogo">medido 20/10</span>.</li></ul>
+<h2 id="o-que-custam-os-itens">O que custam os itens</h2>
+<p>Entre 20/10 e 24/10, o mínimo de qualquer anúncio visto foi de 25 coins, e o intervalo observado é largo, de 25 a milhares de coins <span class="marca marca-medido" title="medido no jogo">medido 24/10</span>. Os itens forjados ou de raridade alta tendem a custar mais <span class="marca marca-medido" title="medido no jogo">medido 24/10</span>; mas há peças Lendárias a 25 coins e peças Incomuns a 100, por isso a raridade sozinha não fixa o preço <span class="marca marca-medido" title="medido no jogo">medido 24/10</span>.</p>
+<ul><li>A oferta varia: de uma vez para outra, famílias inteiras podem ter 0 anúncios <span class="marca marca-medido" title="medido no jogo">medido 20/10</span>.</li></ul>
+<h2 id="o-que-se-nao-sabe">O que se não sabe</h2>
+<ul><li>Como se <strong>vende</strong> no Market, a taxa do jogo, a duração de um anúncio e o limite de anúncios por conta: <code>?</code>.</li><li>De onde vêm as coins e quanto se ganha: <code>?</code>.</li><li>Se os preços e as regras mudaram depois de 24/10: <code>?</code>.</li></ul>
+</article>
+<footer class="rodape">
+<p>revista a 01/11/2026</p>
+</footer>
+</main>
+</div>
+</body>
+</html>
